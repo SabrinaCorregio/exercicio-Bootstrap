@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #f2f2f2;
+            z-index: 1;
+        }
+        form {
+        margin-top: 2rem;
+        text-align: left;
+        }
+        .offers {
+            background-color: #f2f2f2;
+            padding: 2rem 4rem;
+            margin-bottom: 2rem;
+        }
+        .offers form input {
+            font-size: 1.4rem;
+            height: 4.2rem;
+            width: 32rem;
+        }
+        .offers form label {
+            padding-left: 0.3rem;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .offers form button {
+            border-radius: 1.6rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            height: 4.5rem;
+            letter-spacing: .05em;
+            padding: 1rem 3rem;
+            width: 17rem;
+            margin-top: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Vida à vida, sua vida nômade</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"> 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+<div class="container my-4" id="inicio">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/02/18/04/13/motorhome-1206525_960_720.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/07/11/11/12/horizon-5393617_1280.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/06/05/01/28/compass-5261062_1280.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <div class="row my-4" id="produtos">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2017/08/19/00/44/airstream-2656977_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Motor Home</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto odio eius magnam debitis nobis quaerat.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2017/11/29/03/57/road-2985181_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Camping</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto odio eius magnam debitis nobis quaerat.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2016/06/06/08/32/tent-1439061_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Vida Nômade</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto odio eius magnam debitis nobis quaerat.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card text-bg-dark">
+                <img src="https://cdn.pixabay.com/photo/2019/12/20/11/13/sea-4708238_960_720.jpg" class="card-img-top" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Vida Nômade</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto odio eius magnam debitis nobis quaerat.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card text-bg-dark">
+                <img src="https://cdn.pixabay.com/photo/2022/07/17/18/24/chioggia-7328047_960_720.jpg" class="card-img-top" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Vida Nômade</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto odio eius magnam debitis nobis quaerat.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card text-bg-dark">
+                <img src="https://cdn.pixabay.com/photo/2017/03/18/17/56/egypt-2154597_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Vida Nômade</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto odio eius magnam debitis nobis quaerat.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="container text-center" id="contato">
+    <div class="offers">
+        <div>
+            <h2>Receba conteúdos exclusivos</h2>
+        </div>
+        <form>
+            <div class="container d-flex justify-content-around">
+                <div class="row">
+                    <div class="col col-x1-5" col-lg-5>
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" placeholder="Seu e-mail..." id="email">
+                    </div>
+                    <div class="col col-x1-5" col-lg-5>
+                        <label for="tel" class="form-label">Whatsapp</label>
+                        <input type="text" class="form-control" placeholder="Seu Whatsapp..." id="number">
+                    </div>
+                    <div class="col col-x1-5" col-lg-5>
+                        <button class="btn btn-primary">ENVIAR</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+<script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
